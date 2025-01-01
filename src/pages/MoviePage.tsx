@@ -6,47 +6,47 @@ import type { SliderQueries } from "../types/app";
 
 const queries: SliderQueries[] = [
   {
-    title: "Popular",
+    title: "热门",
     endpoint: "movie/popular",
   },
   {
-    title: "Upcoming",
+    title: "即将上映",
     endpoint: "movie/upcoming",
   },
   {
-    title: "Top Rated",
+    title: "最受好评",
     endpoint: "movie/top_rated",
   },
   {
-    title: "Crime & Thrillers",
+    title: "犯罪惊悚",
     endpoint: "discover/movie",
     params: {
       with_genres: [MOVIE_GENRE.CRIME, MOVIE_GENRE.THRILLER],
     },
   },
   {
-    title: "Animation",
+    title: "动画",
     endpoint: "discover/movie",
     params: {
       with_genres: MOVIE_GENRE.ANIMATION,
     },
   },
   {
-    title: "Documentary",
+    title: "纪录片",
     endpoint: "discover/movie",
     params: {
       with_genres: MOVIE_GENRE.DOCUMENTARY,
     },
   },
   {
-    title: "Romance",
+    title: "浪漫",
     endpoint: "discover/movie",
     params: {
       with_genres: MOVIE_GENRE.ROMANCE,
     },
   },
   {
-    title: "Family",
+    title: "家庭",
     endpoint: "discover/movie",
     params: {
       with_genres: MOVIE_GENRE.FAMILY,

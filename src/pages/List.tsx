@@ -16,15 +16,15 @@ const List = () => {
         <div className={styles["no-list"]}>
           <CheckCircle />
           <p>
-            Add movies & TV shows to your list so you can easily find them
+          将电影和电视剧添加到您的列表中，以便您轻松找到它们
             later.
           </p>
-          <button onClick={() => navigate("/")}>Find something to watch</button>
+          <button onClick={() => navigate("/")}>查找要观看的内容</button>
         </div>
       ) : (
         <>
           <main className={j(sliderSyles["slider-container"], styles.main)}>
-            <h1>My List</h1>
+            <h1>我的清单</h1>
             <div className={sliderSyles["slider-carousel"]}>
               {/* https://stackoverflow.com/a/59459000 */}
               {myList.map((item) => {

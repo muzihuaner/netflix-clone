@@ -4,10 +4,10 @@ import { useModalDispatcher } from "../contexts/ModalContext";
 import styles from "../styles/mobile-nav.module.scss";
 
 export const navLinks = [
-  { text: "Home", to: "/browse", icon: <HomeSimple /> },
-  { text: "TV Shows", to: "/tv", icon: <Tv /> },
-  { text: "Movies", to: "/movie", icon: <CinemaOld /> },
-  { text: "My List", to: "/list", icon: <List /> },
+  { text: "主页", to: "/browse", icon: <HomeSimple /> },
+  { text: "节目", to: "/tv", icon: <Tv /> },
+  { text: "电影", to: "/movie", icon: <CinemaOld /> },
+  { text: "我的清单", to: "/list", icon: <List /> },
 ];
 
 const MobileNav = () => {
@@ -32,7 +32,7 @@ const MobileNav = () => {
               setModalData({ visible: true, category: "list" });
             }}>
             <Emoji />
-            <span>Genres</span>
+            <span>类型</span>
           </button>
         </li>
       </ul>

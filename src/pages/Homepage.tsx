@@ -6,7 +6,7 @@ import type { SliderQueries } from "../types/app";
 
 const queries: SliderQueries[] = [
   {
-    title: "Popular Movies",
+    title: "热门电影",
     endpoint: "discover/movie",
     params: {
       with_watch_providers: 8,
@@ -14,7 +14,7 @@ const queries: SliderQueries[] = [
     },
   },
   {
-    title: "Only on Netflix",
+    title: "Netflix独播",
     endpoint: "discover/tv",
     params: {
       with_watch_providers: 8,
@@ -22,39 +22,39 @@ const queries: SliderQueries[] = [
     },
   },
   {
-    title: "Horror Movies",
+    title: "恐怖电影",
     endpoint: "discover/movie",
     params: {
       with_genres: MOVIE_GENRE.HORROR,
     },
   },
   {
-    title: "Popular TV Shows",
+    title: "热门节目",
     endpoint: "tv/popular",
   },
   {
-    title: "Talk Shows",
+    title: "脱口秀",
     endpoint: "discover/tv",
     params: {
       with_genres: TV_GENRE.TALK,
     },
   },
   {
-    title: "Fantasy Movies",
+    title: "奇幻电影",
     endpoint: "discover/movie",
     params: {
       with_genres: MOVIE_GENRE.FANTASY,
     },
   },
   {
-    title: "Science Fiction",
+    title: "科幻",
     endpoint: "discover/tv",
     params: {
       with_genres: TV_GENRE.SCI_FI_FANTASY,
     },
   },
   {
-    title: "Western",
+    title: "西部",
     endpoint: "discover/movie",
     params: {
       with_genres: MOVIE_GENRE.WESTERN,

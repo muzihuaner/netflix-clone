@@ -55,7 +55,7 @@ const Header = () => {
                     }
                   }, 300);
                 }}>
-                <span>Browse By Genres</span>
+                <span>按类型浏览</span>
                 <div className={styles["genre-popup"]} ref={popRef}>
                   {[movieGenreEntries, tvGenreEntries].map((genre) => (
                     <div key={genre.title}>
@@ -81,7 +81,7 @@ const Header = () => {
             <div className={styles["lang-selector"]}>
               <select defaultValue="english" name="language">
                 <option value="english">English</option>
-                <option value="hindi">Hindi</option>
+                {/* <option value="hindi">Hindi</option> */}
               </select>
             </div>
             <button

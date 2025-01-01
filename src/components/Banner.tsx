@@ -225,7 +225,7 @@ const Banner = ({
             <li>
               <button onClick={handleAddList}>
                 {isInList(data.id!, category) ? <Check /> : <Plus />}
-                <span>My List</span>
+                <span>我的清单</span>
               </button>
             </li>
           )}
@@ -234,13 +234,13 @@ const Banner = ({
               className={styles["play-btn"]}
               onClick={handlePlayButtonClick}>
               {playing ? <Pause /> : <Play />}
-              <span>{playing ? "Pause" : "Play"}</span>
+              <span>{playing ? "暂停" : "播放"}</span>
             </button>
           </li>
           <li>
             <button onClick={handleInfoClick}>
               <InfoEmpty />
-              <span>{tabletUp ? "More Info" : "Info"}</span>
+              <span>{tabletUp ? "更多信息" : "Info"}</span>
             </button>
           </li>
         </ul>

@@ -58,7 +58,7 @@ const splitJoin = (str: string) => {
 };
 
 export const movieGenreEntries = {
-  title: "MOVIES",
+  title: "电影",
   list: Object.entries(MOVIE_GENRE).map((genre) => {
     return {
       text: splitJoin(genre[0]),
@@ -68,7 +68,7 @@ export const movieGenreEntries = {
 };
 
 export const tvGenreEntries = {
-  title: "TV",
+  title: "节目",
   list: Object.entries(TV_GENRE).map((genre) => {
     return {
       text: splitJoin(genre[0]),

@@ -6,47 +6,47 @@ import type { SliderQueries } from "../types/app";
 
 const queries: SliderQueries[] = [
   {
-    title: "Popular",
+    title: "热门",
     endpoint: "tv/popular",
   },
   {
-    title: "Top Airing",
+    title: "热播",
     endpoint: "tv/on_the_air",
   },
   {
-    title: "Top Rated",
+    title: "最受好评",
     endpoint: "tv/top_rated",
   },
   {
-    title: "Crime",
+    title: "犯罪",
     endpoint: "discover/tv",
     params: {
       with_genres: TV_GENRE.CRIME,
     },
   },
   {
-    title: "Mystery",
+    title: "神秘",
     endpoint: "discover/tv",
     params: {
       with_genres: TV_GENRE.MYSTERY,
     },
   },
   {
-    title: "Animation",
+    title: "动画",
     endpoint: "discover/tv",
     params: {
       with_genres: TV_GENRE.ANIMATION,
     },
   },
   {
-    title: "Action & Adventure",
+    title: "动作冒险",
     endpoint: "discover/tv",
     params: {
       with_genres: TV_GENRE.ACTION_ADVENTURE,
     },
   },
   {
-    title: "Reality",
+    title: "真人秀",
     endpoint: "discover/tv",
     params: {
       with_genres: TV_GENRE.REALITY,
