@@ -9,17 +9,16 @@ const LandingPage = () => {
     <>
       <div className={j(styles["image-wrapper"], styles["image-section"])}>
         <Section className={styles["intro-section"]}>
-          <h1>Unlimited movies, TV shows and more.</h1>
-          <p>Watch anywhere. Cancel anytime.</p>
+          <h1>无限的电影、节目还有更多...</h1>
+          <p>随时随地观看，可自由取消订阅</p>
           <Form />
         </Section>
       </div>
       <Section>
         <div>
-          <h2>Enjoy on your TV.</h2>
+          <h2>享受您的电视时光</h2>
           <p>
-            Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
-            players and more.
+          在智能电视、PlayStation、Xbox、Chromecast、Apple TV、蓝光播放器等设备上观看。
           </p>
         </div>
         <div className={styles["tv-demo-wrapper"]}>
@@ -35,8 +34,8 @@ const LandingPage = () => {
       </Section>
       <Section>
         <div>
-          <h2>Download your shows to watch offline.</h2>
-          <p>Save your favourites easily and always have something to watch.</p>
+          <h2>下载您的节目，离线观看</h2>
+          <p>轻松保存您最喜爱的内容，随时都有内容可看。</p>
         </div>
         <div className={styles["mobile-demo-wrapper"]}>
           <img src="/mobile-demo.jpg" alt="" />
@@ -52,10 +51,9 @@ const LandingPage = () => {
       </Section>
       <Section>
         <div>
-          <h2>Watch everywhere.</h2>
+          <h2>随时随地观看.</h2>
           <p>
-            Stream unlimited movies and TV shows on your phone, tablet, laptop,
-            and TV.
+          畅享手机、平板、笔记本电脑和电视上的无限电影和电视剧。
           </p>
         </div>
         <div className={styles["watch-demo-wrapper"]}>
@@ -71,16 +69,16 @@ const LandingPage = () => {
       </Section>
       <Section>
         <div>
-          <h2>Create profiles for children.</h2>
+          <h2>为儿童创建个人资料。</h2>
           <p>
-            Send children on adventures with their favourite characters in a
-            space made just for them—free with your membership.
+          让孩子与他们最喜欢的角色一起冒险
+          为他们打造专属空间 - 您的会员免费资格。
           </p>
         </div>
         <img src="/annoying-kids.png" alt="" />
       </Section>
       <Section>
-        <h2>Frequently Asked Questions</h2>
+        <h2>常见问题解答</h2>
         <Accordion />
         <Form />
       </Section>

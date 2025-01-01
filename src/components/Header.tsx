@@ -31,7 +31,7 @@ const Header = () => {
     <header ref={headerRef} className={styles.header}>
       <div className={styles["nav-left"]}>
         <Link to="/" className={styles["nf-logo"]}>
-          <img src="/logo.svg" alt="netflix logo" />
+          <img src="/logo.png" alt="quickflix logo" />
         </Link>
         {matches && !isLandingPage && (
           <ul className={styles["nav-left__list"]}>
@@ -87,7 +87,7 @@ const Header = () => {
             <button
               className={styles["sign-in-btn"]}
               onClick={() => navigate("/browse")}>
-              Sign In
+              观影指南
             </button>
           </>
         )}

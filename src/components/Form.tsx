@@ -4,15 +4,15 @@ const Form = () => {
   return (
     <form action="#" className={styles["get-started-form"]}>
       <label htmlFor="email-field">
-        Ready to watch? Enter your email to create or restart your membership.
+        准备观看？ 输入您的电子邮件创建或重新启动您的会员资格。
       </label>
       <input
         id="email-field"
         type="email"
         autoComplete="email"
-        placeholder="Email Address"
+        placeholder="您的电子邮箱"
       />
-      <button>Get Started</button>
+      <button>开始</button>
     </form>
   );
 };
