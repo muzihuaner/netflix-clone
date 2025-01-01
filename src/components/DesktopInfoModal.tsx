@@ -138,7 +138,7 @@ const DesktopInfoModal = ({
           : styles["mini-modal-info-details"]
       }>
       <h2>{title}</h2>
-      <span className={styles["span-match"]}>69% match</span>
+      <span className={styles["span-match"]}>69% 匹配</span>
       {season > 1 && <span>{`${season} Seasons`}</span>}
       {runtime && <span className={styles["span-runtime"]}>{runtime}</span>}
       {isExpanded && data.overview && <p>{data.overview}</p>}
@@ -158,7 +158,7 @@ const DesktopInfoModal = ({
           }
         }}>
         {videos && playing ? <Pause /> : <Play />}
-        {isExpanded && <span>{playing ? "Pause" : "Play"}</span>}
+        {isExpanded && <span>{playing ? "暂停" : "播放"}</span>}
       </button>
       <button onClick={addToList}>
         {isInList(data.id!, category) ? <Check /> : <Plus />}
@@ -284,7 +284,7 @@ const DesktopInfoModal = ({
                 )}
                 {Array.isArray(data.genres) && (
                   <div>
-                    <span className={styles["span-title"]}>Genre: </span>
+                    <span className={styles["span-title"]}>类型: </span>
                     {data.genres.map((genre, idx) => (
                       <span key={genre.id}>
                         {genre.name}
@@ -307,7 +307,7 @@ const DesktopInfoModal = ({
               )}
               {data.recommendations.results!.length > 0 && (
                 <div className={styles["recommendation-section"]}>
-                  <h2>More Like This</h2>
+                  <h2>更多类似内容</h2>
                   <Slider
                     endpoint={`${category}/${id}/recommendations`}
                     flow="column"
@@ -316,7 +316,7 @@ const DesktopInfoModal = ({
               )}
               {videos && (
                 <div className={styles["trailers-section"]}>
-                  <h2>Trailer & More</h2>
+                  <h2>更多预告</h2>
                   <div className={styles["video-frames"]}>
                     {videos.map((video) => {
                       return (
@@ -333,12 +333,12 @@ const DesktopInfoModal = ({
             </div>
             <div className={styles["big-modal-info-about"]}>
               <h2>
-                About <span>{title}</span>
+                关于 <span>{title}</span>
               </h2>
               {Array.isArray(director) && (
                 <div>
                   <span className={styles["span-title"]}>
-                    {category === "tv" ? "Creators: " : "Director: "}
+                    {category === "tv" ? "创作者: " : "导演: "}
                   </span>
                   {director.map((crew, idx) => (
                     <span key={crew.id}>
@@ -350,7 +350,7 @@ const DesktopInfoModal = ({
               )}
               {Array.isArray(cast) && (
                 <div>
-                  <span className={styles["span-title"]}>Cast: </span>
+                  <span className={styles["span-title"]}>演员: </span>
                   {cast.map((star, idx) => {
                     return (
                       <span key={star.id}>
@@ -363,7 +363,7 @@ const DesktopInfoModal = ({
               )}
               {Array.isArray(data.genres) && (
                 <div>
-                  <span className={styles["span-title"]}>Genre: </span>
+                  <span className={styles["span-title"]}>类型: </span>
                   {data.genres.map((genre, idx) => (
                     <span key={genre.id}>
                       {genre.name}

@@ -78,12 +78,12 @@ const Header = () => {
       <div className={styles["nav-right"]}>
         {isLandingPage && (
           <>
-            <div className={styles["lang-selector"]}>
-              <select defaultValue="english" name="language">
-                <option value="english">English</option>
-                {/* <option value="hindi">Hindi</option> */}
-              </select>
-            </div>
+            <button
+              className={styles["buy-btn"]}
+              onClick={() => window.location.href = "https://zu.quickso.cn"}>
+              账号租用
+            </button>
+
             <button
               className={styles["sign-in-btn"]}
               onClick={() => navigate("/browse")}>

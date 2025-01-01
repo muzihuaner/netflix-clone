@@ -160,7 +160,7 @@ const InfoPage = () => {
         <div className={styles["info-section__title"]}>
           <h2>{title}</h2>
           <span>{releaseDate}</span>
-          {season && <span>{`${season} Seasons`}</span>}
+          {season && <span>{`${season} 季`}</span>}
           <span>{runtime}</span>
         </div>
         {videos && (
@@ -168,7 +168,7 @@ const InfoPage = () => {
             className={styles["info-section__play-btn"]}
             onClick={() => setPlaying(!playing)}>
             {playing ? <Pause /> : <Play />}
-            <span>{playing ? "Pause" : "Play"}</span>
+            <span>{playing ? "暂停" : "播放"}</span>
           </button>
         )}
         <p>{data.overview}</p>
@@ -187,7 +187,7 @@ const InfoPage = () => {
             )}
           </ul>
           <ul>
-            <span>{category === "movie" ? "Director:" : "Creator:"}</span>
+            <span>{category === "movie" ? "导演:" : "创作者:"}</span>
             {Array.isArray(director) ? (
               director.map((crew, idx) => (
                 <li key={crew.id}>
@@ -203,11 +203,11 @@ const InfoPage = () => {
         <div className={styles["info-section__actions"]}>
           <button onClick={handleListAdd}>
             {isInList(data.id!, category) ? <Check /> : <Plus />}
-            <span>My List</span>
+            <span>我的清单</span>
           </button>
           <button>
             <ThumbsUp />
-            <span>Rate</span>
+            <span>评分</span>
           </button>
           <button
             onClick={() =>
@@ -216,7 +216,7 @@ const InfoPage = () => {
               })
             }>
             <ShareAndroid />
-            <span>Share</span>
+            <span>分享</span>
           </button>
         </div>
       </section>
@@ -225,19 +225,19 @@ const InfoPage = () => {
           <TabListContainer>
             {category === "tv" && (
               <TabList id="episodes-tab">
-                <button>Episodes</button>
+                <button>集数</button>
               </TabList>
             )}
             {/* TODO: Recommendation could be empty && make a generic slider
               that takes just the result object */}
             {recommendations.length > 0 && (
               <TabList id="recommendations-tab">
-                <button>More Like This</button>
+                <button>更多类似内容</button>
               </TabList>
             )}
             {videos && (
               <TabList id="trailers-tab">
-                <button>Trailers & More</button>
+                <button>更多预告</button>
               </TabList>
             )}
           </TabListContainer>

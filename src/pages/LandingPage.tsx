@@ -10,7 +10,7 @@ const LandingPage = () => {
       <div className={j(styles["image-wrapper"], styles["image-section"])}>
         <Section className={styles["intro-section"]}>
           <h1>无限的电影、节目还有更多...</h1>
-          <p>随时随地观看，可自由取消订阅</p>
+          <p>快飞-Quickflix-在线观影指南</p>
           <Form />
         </Section>
       </div>
