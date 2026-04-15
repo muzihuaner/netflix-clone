@@ -8,7 +8,7 @@ const Form = () => {
       </label>
       <button
   className={styles["buy-btn"]}
-  onClick={() => window.location.href = "https://zu.quickso.cn"}>
+  onClick={() => window.location.href = "https://muzihuaner.github.io/NetflixHZ/"}>
   账号租用
 </button>
 
