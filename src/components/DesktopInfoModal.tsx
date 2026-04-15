@@ -271,7 +271,7 @@ const DesktopInfoModal = ({
                 {/* // TODO simplify checks */}
                 {Array.isArray(starring) && starring.length > 0 && (
                   <div>
-                    <span className={styles["span-title"]}>Cast: </span>
+                    <span className={styles["span-title"]}>演员表: </span>
                     {starring.map((star, idx) => {
                       return (
                         <span key={star.id}>
